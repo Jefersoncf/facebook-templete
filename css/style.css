@@ -28,6 +28,7 @@ nav {
   top: 0;
   z-index: 999;
 }
+
 .logo {
   cursor: pointer;
   width: 160px;
@@ -174,6 +175,7 @@ nav {
 .important-links a img {
   width: 30px;
   margin-right: 10px;
+  position: relative;
 }
 .line {
   border-bottom: 1px solid #96989b;
@@ -186,6 +188,16 @@ nav {
   width: 30px;
   border-radius: 5px;
   margin-right: 10px;
+}
+.notification-groups {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #069731;
+  position: absolute;
+  border: 2px solid var(--white-color);
+  top: 30px;
+  left: 30px;
 }
 
 /* RIGHT SIDEBAR */
@@ -296,6 +308,7 @@ nav {
   display: flex;
   align-items: center;
   padding: 5px 8px;
+  position: relative;
 }
 .contact-list p {
   padding: 10px 0;
@@ -308,18 +321,28 @@ nav {
   cursor: pointer;
 }
 
-.contact-list .online {
+.contact-list .online-list {
   margin-right: 10px;
   width: 30px;
   border-radius: 50%;
 }
-.contact-list .online img {
+.contact-list .online-list img {
   width: 30px;
   border-radius: 50%;
 }
-.contact-list .online::after {
+.contact-list .online-list::after {
   top: unset;
   bottom: 15px;
+}
+.online-user {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #069731;
+  position: absolute;
+  border: 1.5px solid var(--white-color);
+  top: 30px;
+  left: 30px;
 }
 
 .sidebar-content {
@@ -363,8 +386,7 @@ nav {
 .story {
   flex-basis: 18%;
   padding-top: 32%;
-  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)),
-    url("/images/status-1.png");
+
   background-position: center;
   background-size: cover;
   border-radius: 10px;
@@ -374,16 +396,56 @@ nav {
   position: absolute;
   width: 40px;
   border-radius: 50%;
-  /* top: 10px; */
-  left: 33%;
-  bottom: 20px;
-  border-radius: 5px solid #626262;
-  text-align: center;
+  top: 10px;
+  left: 10px;
+  border: 4px solid #1876f1;
+  /* text-align: center; */
 }
 .story p {
   position: absolute;
-  left: 17px;
-  bottom: 5px;
-  color: var(--white-color);
+  width: 100%;
+  /* left: 17px; */
+  bottom: 10px;
   text-align: center;
+  color: var(--white-color);
+  font-weight: bold;
+  font-size: 14px;
+}
+.story1 img:first-child {
+  left: 50%;
+  top: unset;
+  bottom: 30px;
+  border: 0;
+  width: 40px;
+  transform: translateX(-50%);
+}
+.story1 {
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)),
+    url("/images/status-1.png");
+}
+.story2 {
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)),
+    url("/images/status-2.png");
+}
+.story3 {
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)),
+    url("/images/status-3.png");
+}
+.story4 {
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)),
+    url("/images/status-4.png");
+}
+.story5 {
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)),
+    url("/images/status-5.png");
+}
+.online {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #069731;
+  position: absolute;
+  border: 2px solid var(--white-color);
+  top: 35px;
+  left: 40px;
 }
