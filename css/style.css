@@ -174,6 +174,8 @@ nav {
 }
 .important-links a img {
   width: 30px;
+  height: 30px;
+  border-radius: 50%;
   margin-right: 10px;
   position: relative;
 }
@@ -423,22 +425,27 @@ nav {
 .story1 {
   background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)),
     url("/images/status-1.png");
+  cursor: pointer;
 }
 .story2 {
   background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)),
     url("/images/status-2.png");
+  cursor: pointer;
 }
 .story3 {
   background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)),
     url("/images/status-3.png");
+  cursor: pointer;
 }
 .story4 {
   background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)),
     url("/images/status-4.png");
+  cursor: pointer;
 }
 .story5 {
   background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)),
     url("/images/status-5.png");
+  cursor: pointer;
 }
 .online {
   width: 10px;
@@ -542,6 +549,7 @@ nav {
   border-radius: 10px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
   margin-top: 20px;
+  margin-bottom: 30px;
 }
 .write-post-container .user-profile {
   display: flex;
@@ -668,4 +676,10 @@ nav {
 .post-row .post-row-item:hover {
   background-color: #f2f2f2;
   border-radius: 5px;
+}
+.footer {
+  text-align: center;
+  padding: 10px;
+  color: var(--secondary-color);
+  font-size: 13px;
 }
