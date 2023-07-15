@@ -68,6 +68,65 @@ nav {
   background: none;
   font-size: 1rem;
 }
+.setitings-menu {
+  position: absolute;
+  width: 90%;
+  max-width: 350px;
+  height: 500px;
+  background: var(--white-color);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  top: 60px;
+  right: 50px;
+  padding: 1rem;
+}
+
+.config-perfil {
+  width: 100%;
+  padding: 0.3rem;
+  background: var(--white-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+.config-perfil .perfil-co {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+.config-perfil .perfil-co:hover {
+  background: #f2f2f2;
+  border-radius: 8px;
+}
+.config-perfil img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+.config-perfil h3 {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-left: 10px;
+}
+.config-perfil hr {
+  margin-top: 5px;
+  color: var(--secondary-color);
+}
+.info-perfil {
+  margin-top: 5px;
+  padding: 0.5rem 0;
+}
+.info-perfil a {
+  text-decoration: none;
+  color: #1876f1;
+  padding: 0.5rem 0.2rem;
+  font-size: 15px;
+  margin-left: 5px;
+}
+.info-perfil:hover {
+  background-color: #f2f2f2;
+  border-radius: 8px;
+}
 
 .nav-right ul li {
   list-style: none;
